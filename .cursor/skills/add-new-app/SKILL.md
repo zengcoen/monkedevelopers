@@ -32,7 +32,8 @@ wordHuntSolver/
    - Duplicate `wordHuntSolver/` → `yourAppName/` (camelCase folder name, matching existing apps).
 
 2. **Generate descriptions from the app name**
-   - Infer what the app does from the name alone (and any short hint the user gave).
+   - Titles are often not self-explanatory. Use built-in **web search** (and fetch an official or rules page if needed) unless the user already gave full rules. No extra MCP server is required.
+   - Prefer any short hint the user gave when it conflicts with a search snippet.
    - Write a **home-tile blurb**: one short sentence, same tone as existing tiles.
    - Write **landing-page copy**: a short intro paragraph, 2–3 feature bullets, and a closing paragraph — same shape as `wordHuntSolver/index.html`.
    - Do not leave Word Hunt Solver placeholder text. Do not ask the user for marketing copy unless they already provided it.
