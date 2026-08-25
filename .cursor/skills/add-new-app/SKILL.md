@@ -49,6 +49,17 @@ wordHuntSolver/
    - Set `href` to `yourAppName/`, the display name, and the generated one-sentence blurb.
    - Place it with the other live apps (before the commented-out placeholder tiles).
 
+5. **Commit and push**
+   The live site is GitHub Pages from `origin/main`. A local commit is not enough.
+
+   ```bash
+   git add <new-app-folders> index.html
+   git commit -m "Add <App Name> landing, privacy, TOS, and home tile."
+   git push origin HEAD
+   ```
+
+   Do not force-push. Do not add unrelated untracked files (e.g. `Untitled/`). Skip `git add` for files you did not change.
+
 ### Tile template
 
 ```html
@@ -74,3 +85,4 @@ Cycle `style2` / `style3` / `style4` like neighboring tiles. Reuse an existing `
 - [ ] App name updated in landing, privacy, and ToS pages
 - [ ] App Store link / screenshots updated when available
 - [ ] New `<article>` added in root `index.html` tiles list
+- [ ] Changes committed and pushed to `origin/main`
